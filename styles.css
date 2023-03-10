@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: .6fr 1.75fr 1.75fr;
+  grid-template-rows: 0.1fr 1.5fr 1.5fr ;
+}
+.sidebar {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: rgb(33, 137, 202);
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logoName{
+font-size: 30px;
+font-weight: 900;
+}
+.navList, .sspList{
+   list-style: none;
+   font-size: 20px;
+   line-height: 3;
+   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:15px;
+}
+.navButton{
+  border-style: none;
+  background-color: transparent;
+  font-size: 20px;
+  text-align: left;
+  display: flex;
+  gap:15px
+  
+  
+
+}
+.material-symbols-outlined{
+    vertical-align: middle;
+}
+
+
+.logo {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: first baseline;
+  gap: 15px;
+  padding-left: 10px;
+}
+.tent{
+    justify-self: center;
+    position: relative;
+    bottom:6px;
+}
+.header {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-color:white;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1.5fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+  
+
+}
+#noteIcon{
+    font-size: 35px;
+}
+.noteBtn{
+    border: none;
+    background-color: transparent;
+}
+.main {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: blueviolet;
+}
+.search{
+    display: flex;
+    gap:15px;
+    justify-content: center;
+}
+.searchBar{
+    width:700px;
+    border-radius: 45px;
+    border-style: none;
+    background-color: lightgray;
+}
+.user{
+    display:grid;
+    grid-template-columns: .25fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 15px;
+   
+}
+.userLogo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: flex-end;
+}
+.headName{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+}
+.nus{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    
+}
+.new, .upload, .share{
+    border-radius: 40px;
+    width: 15%;
+    height: 40px;
+    border-style: none;
+    color: white;
+    background-color: rgb(33, 137, 202);
+    font-weight: 800;
+}
+.hi{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: flex-end;
+}
+.projects {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: bisque;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .25fr 1fr 1fr 1fr;
+  padding-left: 8%;
+  padding-top: 3%;
+  padding-bottom: 4%;
+  gap: 20px;
+  
+
+}
+.projList {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+}
+.proj1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+}
+.proj2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.proj3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.proj4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.proj5 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.proj6 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.proj1 ,.proj2 ,.proj3 ,.proj4 ,.proj5 ,.proj6 {
+    background-color: aqua;
+    
+    width: 90%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.shareBtn, .favorite, .seen{
+    background-color: transparent;
+    border-style: none;
+    
+}
+.projBtn{
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+.trend {
+  background-color: blue;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.announ {
+  background-color: brown;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
